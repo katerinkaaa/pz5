@@ -1,0 +1,24 @@
+* {
+    margin:0 auto;
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: MontserratAlt_Bold;
+    src: url();
+}
+section {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    margin-top: 150px;
+}
+.container {
+    width:1058px;
+    margin:auto;
+}
+
+.item {
+    display: inline-block;
+    font-family: 'MontserratAlt_Bold';
+    font-size: 25px;
+}

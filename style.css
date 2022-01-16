@@ -1,0 +1,47 @@
+* {
+    margin:0 auto;
+    box-sizing:border-box;
+    font-family: 'MontserratAlt_Light';
+}
+@font-face {
+    font-family: MontserratAlt_Light;
+    src: url(./fonts/MontserratAlternates-Regular.woff2);
+}
+body {
+    background-color: #bdbcbc4a;
+}
+section {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin-top: 150px;
+}
+.container {
+    width:900px;
+    margin:auto;
+}
+.tamle_items {
+    display: inline-flex;
+}
+.table1 {
+    margin-right: 138px;
+}
+.btn {
+    background-color: #424242;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+table, .table1, .table2 {
+    border-collapse: collapse;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 350px;
+}
+td, th {
+    border: 0.8px solid #bdbcbc;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pz5</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form">
+                
+                    <div class="main">
+                        <div class="main-item">
+                            <div class="item">
+                                <label><input type="radio" value="Актив" name="type_radio" class="radio" checked>
+                                Aктив</label>
+                            </div>
+                            <div class="item">
+                                <label ><input type="radio" value="Пассив" name="type_radio" id="radio" class="radio">
+                                Пассив</label>
+                            </div><br>
+                        </div>   
+                        <div class="info">
+                            <input type="text"  class="info-input" name="name" id="name" placeholder="Наименование актива/пассива">
+                            <input type="number" class="info-input" name="price" id="price" placeholder="Стоимость">
+                        </div><br>
+                        <div class="button">
+                            <button class="btn add" onclick="AddRow()">Добавить</button>
+                        </div>
+                    </div>
+                
+            </div><br>
+            <div class="table__main">
+                <div class="tamle_items">
+                    <div class="table1">
+                        <table class="table_active" id="table_active">
+                            <tbody id="active_body">
+                                <tr>
+                                    <th>Название актива</th>
+                                    <th>Стоимость актива</th>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        <table id="deliteAct">
+                            <tbody id="itog_body">
+                                <tr>
+                                    
+                                    <td id="itog"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table2">
+                        <table class="table_passiv" id="table_passiv">
+                            <tbody id="passiv_body">
+                                <tr>
+                                    <th>Название пассива</th>
+                                    <th>Стоимость пассива</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table id="delitePas">
+                            <tbody id="itog_body">
+                                <tr>
+                                    
+                                    <td id="itogPas"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+                
+                <div class="form-group">
+                    <div class="form-group-buttons">
+                        <input type="button" name="button" id="btn__active" class="btn active" value="Рассчитать активный баланс"  onclick="сalculateActive()">
+                        <input type="button" name="button" id="btn__passiv" class="btn passiv" value="Рассчитать пассивный баланс" onclick="calculatePassive()">
+                        <input type="button" name="button" id="btn__itogo" class="btn itogo" value="Рассчитать итоговый баланс" onclick="calculateTotal()">
+                        <input type="button" name="button" id="btn__clear" class="btn clear" value="Очистить" onclick="delAll()">
+                    </div><br>
+                    <div class="calculations">
+                        <p id="ActiveSummary">Сумма активов: 0</p>
+                        <p id="PassiveSummary">Сумма пасивов: 0</p>
+                        <p id="TotalSummary">Итоговый баланс: 0</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>    
+
+
+   <script src="./js/script.js"></script> 
+   <script src="./js/jquery.js"></script>
+   
+   
+</body>
+</html>
